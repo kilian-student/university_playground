@@ -1,0 +1,23 @@
+
+
+understat_data.json: web scraped data from understat.com (05.12.2023). see script data_scraping_understat.py
+understat_data.csv: understat_data.json transformed in csv and break up array structure in single datapoints (21.03.2024)
+
+
+Dataset explanation:
+Each dataset represents the statistics of a single match.
+
+
+- id: match id from understat.com. the id was use for data scraping and gives every match a key
+- league: league of the match, possible leagues are: Premiere League, La Liga, Bundesliga, Serie A, Ligue A and RFPL
+- date: date of the match as string
+- team_home: club name of the team playing at home (following data will be read as home first)
+- team_away: club name of the team playing away
+- chances: match outcome calculation regarding expected goals (calculation from understat.com)
+- goals: goals per team
+- xG: calculated Parameter to determine the probability to shoot a goal (calculation from understat.com)
+- shots: shots per team that missed the goal
+- shots_on_target: shots per team on the goal that would have been a goal if not prevented by action
+- deep: passes that were completed within an estimated 20 yards of goal (crosses included)
+- ppda: passes allowed per defensive action in the opposite half
+- xPTS: expected points (calculation from understat.com)
