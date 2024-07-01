@@ -1,1 +1,1 @@
-# university_skills
+# Collection of university code
